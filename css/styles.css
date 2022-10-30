@@ -6,7 +6,9 @@
 }
 
 body {
-  width: 1440px;
+  margin: 0 auto;
+  width: 1470px;
+  padding: 0 15px;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: var(--main-color-text);
@@ -45,7 +47,6 @@ img {
 /* Header */
 
 .header {
-  padding-left: 36px;
 }
 
 .header-wrap-text {
@@ -64,6 +65,7 @@ img {
 .header-wrap {
   display: flex;
   align-items: center;
+  padding-left: 36px;
 }
 
 .header-logo {
