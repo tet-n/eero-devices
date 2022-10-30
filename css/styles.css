@@ -2,6 +2,7 @@
   --main-color-text: #404040;
   --main-color: #ffffff;
   --secondary-color: #161f49;
+  --main-color-btn: #2468ff;
 }
 
 body {
@@ -59,4 +60,41 @@ img {
   letter-spacing: 0.10998px;
 
   color: var(--main-color);
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 195px;
+}
+
+.header-list {
+  display: flex;
+  gap: 37px;
+}
+
+.header-item {
+  color: var(--main-color-text);
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.10998px;
+}
+
+.header-btn {
+  margin-left: auto;
+  padding: 27px 64px;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.79;
+  text-align: center;
+  letter-spacing: 0.10998px;
+  text-transform: uppercase;
+
+  color: var(--main-color);
+  background-color: var(--main-color-btn);
+
+  border: none;
 }
