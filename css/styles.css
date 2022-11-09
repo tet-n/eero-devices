@@ -10,6 +10,7 @@ body {
   width: 1470px;
   padding: 0 15px;
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 18px;
   color: var(--main-color-text);
   background-color: var(--main-color);
@@ -42,6 +43,20 @@ a {
 img {
   display: block;
   max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Header */
@@ -96,4 +111,114 @@ img {
   background-color: var(--main-color-btn);
 
   border: none;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 367px;
+  width: 100%;
+
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.hero-title {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 1.11;
+
+  color: var(--main-color);
+}
+.hero-text {
+  margin-bottom: 16px;
+
+  font-size: 21px;
+  line-height: 1.38;
+
+  color: var(--main-color);
+}
+.hero-btn {
+  padding: 18px 36px 17px 37px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 0.96;
+  letter-spacing: 0.11px;
+  text-transform: uppercase;
+
+  border: 1px solid #ffffff;
+
+  background-color: transparent;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.hero::after {
+  position: absolute;
+  left: calc(50% - 288px);
+  bottom: -44px;
+  display: block;
+  content: '';
+  width: 576px;
+  height: 324px;
+
+  background-image: url(../images/device-hero.png);
+}
+
+.explore-section {
+  padding-top: 110px;
+  padding-bottom: 116px;
+  text-align: center;
+  margin: 0 auto;
+}
+.explore-title {
+}
+.explore-text {
+  margin-bottom: 21px;
+  line-height: 1.15;
+}
+.amazon-logo {
+  margin-bottom: 27px;
+}
+
+.explore-btn {
+  display: block;
+  padding: 5px 0px;
+
+  position: relative;
+
+  min-width: 78px;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.15;
+
+  text-transform: uppercase;
+
+  background-color: transparent;
+  color: currentColor;
+  border: none;
+  cursor: pointer;
+}
+
+.explore-btn::after {
+  position: absolute;
+  content: '';
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: var(--main-color-text);
 }

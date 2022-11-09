@@ -31,8 +31,10 @@
       </div>
 
       <div class="header-wrap">
-        <a class="header-logo" href="#">
-          <img width="107" src="./images/logo-eero.svg" alt="Логотип" />
+        <a class="header-logo" href="#" aria-label="Eero logo">
+          <svg class="header-icon" width="107" height="49">
+            <use href="./images/icons.svg#logo-black"></use>
+          </svg>
         </a>
         <nav>
           <ul class="header-list">
@@ -48,16 +50,19 @@
       </div>
     </header>
     <main>
-      <section>
-        <h1>Wi-Fi 6 is here.</h1>
-        <p>The future of home wifi is fast.</p>
-        <button type="button">SHOP WIFI SOLUTIONS</button>
+      <!-- Hero -->
+      <section class="hero">
+        <h1 class="hero-title">Wi-Fi 6 is here.</h1>
+        <p class="hero-text">The future of home wifi is fast.</p>
+        <button type="button" class="hero-btn">SHOP WIFI SOLUTIONS</button>
       </section>
-      <section>
-        <h2></h2>
-        <p>Explore eero systems on</p>
-        <img width="108" src="./images/amazon.jpg" alt="Картинки амазона" />
-        <button type="button">Shop now</button>
+      <section class="explore-section">
+        <h2 class="explore-title .visually-hidden">Explore</h2>
+        <p class="explore-text">Explore eero systems on</p>
+        <svg class="amazon-logo" width="107.47" height="39.39">
+          <use href="./images/icons.svg#amazon-logo"></use>
+        </svg>
+        <button type="button" class="explore-btn">Shop now</button>
       </section>
       <section>
         <h2>More wifi for the devices in your connected home.</h2>
