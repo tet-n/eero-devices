@@ -29,7 +29,8 @@ ul {
   padding: 0;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
   padding-left: 0;
 }
@@ -276,26 +277,39 @@ img {
 .devices-section {
   padding-top: 580px;
   padding-bottom: 80px;
+  background-image: url(../images/devices.jpg);
   background-color: var(--main-color-text);
+}
+
+.devices-wrap {
+  margin-bottom: 84px;
+  padding-left: 188px;
 }
 
 .devices-list {
   display: flex;
 }
-.devices-item {
+
+.devices-item:first-child {
+  width: 400px;
+  margin-right: 240px;
 }
+
+.devices-item:last-child {
+  width: 542px;
+}
+
 .devices-suptitle {
+  display: inline-block;
   padding: 1px 14px;
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 21px;
-  /* identical to box height, or 131% */
-
+  line-height: 1.31;
   text-transform: uppercase;
 
   color: #000000;
-  background-color: #ffffff;
+  background-color: var(--main-color);
   border-radius: 18px;
 }
 .devices-title {
@@ -329,10 +343,101 @@ img {
 .price {
   font-weight: 700;
 }
-.devices-section .btn {
+.devices-section .secondary {
+  margin: 0 auto;
+  display: block;
   color: var(--main-color);
 }
 
-.devices-section .btn::after {
+.devices-section .secondary::after {
   background-color: var(--main-color);
+}
+
+/* Routers */
+.routers-section {
+  padding: 200px 308px;
+
+  background-color: var(--main-color-text);
+}
+
+.routers-title {
+  margin-bottom: 45px;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.14;
+  text-align: center;
+
+  color: var(--main-color);
+}
+
+.routers-section img {
+  margin: 0 auto;
+}
+
+/* Potential */
+
+.potential-section {
+  padding-top: 168px;
+  padding-bottom: 72px;
+  padding-left: 353px;
+  padding-right: 353px;
+  background-image: url(../images/potential.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--main-color-text);
+
+  text-align: center;
+}
+
+.contoller-list {
+  display: flex;
+  justify-content: center;
+  gap: 31px;
+  margin-bottom: 57px;
+}
+
+.potential-title {
+  margin-bottom: 44px;
+
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+
+  color: var(--main-color);
+}
+
+.potential--text {
+  margin-bottom: 118px;
+
+  line-height: 1.4;
+  text-align: center;
+
+  color: var(--main-color);
+}
+
+.indicator-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 69px;
+}
+
+.indicator-item {
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
+
+  width: 8px;
+  height: 8px;
+}
+
+.controller-link {
+  display: flex;
+  color: var(--main-color);
+}
+
+.controller-icon {
+  fill: currentColor;
 }
