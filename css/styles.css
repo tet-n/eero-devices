@@ -299,19 +299,25 @@ img {
   width: 542px;
 }
 
-.devices-suptitle {
-  display: inline-block;
-  padding: 1px 14px;
+.suptitle-wrapper {
   margin-bottom: 16px;
+  padding: 1px 14px;
+
+  width: 81px;
+
+  background-color: var(--main-color);
+  border-radius: 18px;
+}
+
+.devices-suptitle {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
   text-transform: uppercase;
 
   color: #000000;
-  background-color: var(--main-color);
-  border-radius: 18px;
 }
+
 .devices-title {
   margin-bottom: 13px;
   font-weight: 400;
