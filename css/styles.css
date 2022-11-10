@@ -2,7 +2,9 @@
   --main-color-text: #404040;
   --main-color: #ffffff;
   --secondary-color: #161f49;
+  --tretiary-color: #f7f7f7;
   --main-color-btn: #2468ff;
+  --second-color-btn: #999999;
 }
 
 body {
@@ -33,6 +35,7 @@ ul,
 ol {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 a {
@@ -429,6 +432,7 @@ img {
   gap: 10px;
 
   margin-top: 69px;
+  margin-bottom: 0;
 }
 
 .indicator-item {
@@ -512,8 +516,10 @@ img {
 /* Features */
 
 .features-section {
-  padding-bottom: 116px;
+  padding-top: 116px;
   padding-bottom: 120px;
+  padding-left: 234px;
+  padding-right: 234px;
 }
 
 .features-title {
@@ -522,25 +528,124 @@ img {
   font-weight: 400;
   font-size: 50px;
   line-height: 1.2;
+  text-align: center;
 }
 
 .features-list {
   display: flex;
+  justify-content: baseline;
 }
+
 .features-item {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 427px;
+  justify-content: space-between;
 }
+
+.features-item:nth-child(1) {
+  margin-right: 164px;
+  width: 206px;
+}
+
+.features-item:nth-child(2) {
+  margin-right: 171px;
+  width: 198px;
+}
+
+.features-item:nth-child(3) {
+  width: 191px;
+}
+
 .features-icon {
+  margin-bottom: 32px;
 }
+
 .features-subtitle {
   margin-bottom: 17px;
   font-size: 21px;
   line-height: 1.15;
 }
 .features-text {
-  margin-bottom: 70px;
   line-height: 1.4;
 }
-.btn {
+
+.features-item .btn {
+  padding-left: 0;
+  padding-right: 0;
 }
-.secondary {
+
+.features-item:nth-child(1) .btn-wrap {
+  text-align: left;
+  min-width: 136px;
+}
+
+/* Sizes */
+
+.size-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 69px;
+  padding-bottom: 108px;
+
+  background-color: var(--tretiary-color);
+}
+.size-title {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: var(--main-color-text);
+}
+
+.indicator-list {
+  display: flex;
+}
+
+.indicator-item {
+  padding: 3px;
+  border: none;
+}
+
+.indicator-item:hover {
+  border: 1px solid #00b68c;
+}
+
+.indicator-wrap {
+  color: var(--main-color);
+  background-color: #00b68c;
+}
+
+.img-list {
+  margin-bottom: 58px;
+}
+
+.controller-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 20px;
+}
+.size-section .contoller-list {
+  display: inline-flex;
+  gap: 14px;
+  margin-bottom: 0;
+}
+
+.controller-link {
+  padding: 15px 23px 14px 23px;
+
+  border: 2px solid rgba(64, 64, 64, 0.3);
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.size-section .btn {
+  display: block;
+  background-color: var(--second-color-btn);
+}
+.primary {
 }
