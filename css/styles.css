@@ -754,3 +754,65 @@ img {
 }
 
 /* Services */
+
+.services-section {
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+.services-title {
+  margin-bottom: 35px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.services-text {
+  margin-bottom: 44px;
+  line-height: 1.4;
+}
+
+.services-section .primary {
+  margin-bottom: 94px;
+}
+.services-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 74px;
+}
+
+.services-after-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-icon {
+  margin-right: 18px;
+
+  fill: none;
+  stroke: #231f20;
+}
+
+/* Connection */
+.connection-section {
+  padding-top: 111px;
+  padding-bottom: 114px;
+  background-color: var(--main-color-text);
+  background-image: url(../images/connection.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  text-align: center;
+}
+.connection-title {
+  margin-bottom: 83px;
+
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+
+  color: #ffffff;
+}

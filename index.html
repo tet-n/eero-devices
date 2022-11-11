@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header class="header">
@@ -277,10 +278,18 @@
         <h2 class="size-title">Find your eero<br />system</h2>
         <!-- Indicators -->
         <ol class="indicator-list">
-          <li class="indicator-item"><div class="indicator-wrap">1</div></li>
-          <li class="indicator-item"><div class="indicator-wrap">2</div></li>
-          <li class="indicator-item"><div class="indicator-wrap">3</div></li>
-          <li class="indicator-item"><div class="indicator-wrap">4</div></li>
+          <li class="indicator-item">
+            <div class="indicator-wrap">1</div>
+          </li>
+          <li class="indicator-item">
+            <div class="indicator-wrap">2</div>
+          </li>
+          <li class="indicator-item">
+            <div class="indicator-wrap">3</div>
+          </li>
+          <li class="indicator-item">
+            <div class="indicator-wrap">4</div>
+          </li>
         </ol>
         <!-- Images -->
         <ul class="img-list">
@@ -353,33 +362,33 @@
         <button type="button" class="btn primary">Help center</button>
         <ul class="services-list">
           <li class="services-item">
-            <p>
+            <p class="services-after-text">
               <svg class="services-icon" width="36" height="36">
-                <use href="./images/icons.svg#"></use>
+                <use href="./images/icons.svg#guarantee"></use>
               </svg>
               30-day guarantee
             </p>
           </li>
           <li class="services-item">
-            <p>
+            <p class="services-after-text">
               <svg class="services-icon" width="36" height="36">
-                <use href="./images/icons.svg#"></use>
+                <use href="./images/icons.svg#bus"></use>
               </svg>
               Free support
             </p>
           </li>
           <li class="services-item">
-            <p>
+            <p class="services-after-text">
               <svg class="services-icon" width="36" height="36">
-                <use href="./images/icons.svg#"></use>
+                <use href="./images/icons.svg#person"></use>
               </svg>
               Free shipping
             </p>
           </li>
           <li class="services-item">
-            <p>
+            <p class="services-after-text">
               <svg class="services-icon" width="36" height="36">
-                <use href="./images/icons.svg#"></use>
+                <use href="./images/icons.svg#warranty"></use>
               </svg>
               1-year warranty
             </p>
@@ -387,49 +396,88 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Stay connected with fast, reliable, whole-home wifi.</h2>
-        <button type="button">goodbye dead spots</button>
+      <!-- Connection -->
+      <section class="connection-section">
+        <h2 class="connection-title">
+          Stay connected with fast,<br />reliable, whole-home wifi.
+        </h2>
+        <button type="button" class="btn primary">goodbye dead spots</button>
       </section>
     </main>
-    <footer>
-      <a href="#">
-        <img src="./images/logo_footer.svg" alt="Logo" width="86" />
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="#" class="footer-logo">
+        <svg class="footer-logo-icon" width="86" height="39">
+          <use href="./images/icons.svg#logo-white"></use>
+        </svg>
       </a>
       <div>
         <!-- Переліки -->
-        <div>
-          <ul>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">eero Secure</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Find Your System</a></li>
-            <li><a href="#">Cookie preferences</a></li>
+        <div class="footer-servises-wrap">
+          <ul class="footer-frst-list">
+            <li class="footer-frst-item"><a href="#">Products</a></li>
+            <li class="footer-frst-item"><a href="#">How it works</a></li>
+            <li class="footer-frst-item"><a href="#">Technology</a></li>
+            <l class="footer-frst-item"><a href="#">eero Secure</a></l>
+            <li class="footer-frst-item"><a href="#">Support</a></li>
+            <li class="footer-frst-item"><a href="#">Find Your System</a></li>
+            <li class="footer-frst-item"><a href="#">Cookie preferences</a></li>
           </ul>
-          <ul>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Media room</a></li>
-            <li><a href="#">Legal</a></li>
-            <li><a href="#">Custom installer</a></li>
-            <li><a href="#">Where to buy</a></li>
-            <li><a href="#">eero for Service Providers</a></li>
+          <ul class="footer-snd-list">
+            <li class="footer-snd-item"><a href="#">Careers</a></li>
+            <li class="footer-snd-item"><a href="#">Shop</a></li>
+            <li class="footer-snd-item"><a href="#">Blog</a></li>
+            <li class="footer-snd-item"><a href="#">Media room</a></li>
+            <li class="footer-snd-item"><a href="#">Legal</a></li>
+            <li class="footer-snd-item"><a href="#">Custom installer</a></li>
+            <li class="footer-snd-item"><a href="#">Where to buy</a></li>
+            <li class="footer-snd-item">
+              <a href="#">eero for Service Providers</a>
+            </li>
           </ul>
         </div>
         <!-- Form -->
         <div></div>
       </div>
-      <div>
-        <p>© 2021 EERO LLC, SAN FRANCISCO, CA</p>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+      <div class="footer-contact-wrap">
+        <p class="footer-copy">© 2021 EERO LLC, SAN FRANCISCO, CA</p>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a href="#"
+              ><svg class="footer-social-icon" width="30" height="30">
+                <use href="./images/icons.svg#"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#"
+              ><svg class="footer-social-icon" width="30" height="30">
+                <use href="./images/icons.svg#"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#"
+              ><svg class="footer-social-icon" width="30" height="30">
+                <use href="./images/icons.svg#"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#"
+              ><svg class="footer-social-icon" width="30" height="30">
+                <use href="./images/icons.svg#"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#"
+              ><svg class="footer-social-icon" width="30" height="30">
+                <use href="./images/icons.svg#"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
