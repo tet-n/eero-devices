@@ -593,6 +593,7 @@ img {
   background-color: var(--tretiary-color);
 }
 .size-title {
+  margin-bottom: 39px;
   font-weight: 400;
   font-size: 50px;
   line-height: 1.2;
@@ -601,20 +602,58 @@ img {
   color: var(--main-color-text);
 }
 
-.indicator-list {
+.size-section .indicator-list {
+  margin-top: 0;
+  margin-bottom: 36px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
 }
 
-.indicator-item {
-  padding: 3px;
-  border: none;
-}
-
-.indicator-item:hover {
+.size-section .indicator-item:first-child {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #00b68c;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
 }
 
-.indicator-wrap {
+.size-section .indicator-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+}
+
+.size-section .indicator-item:not(:last-child):after {
+  content: '';
+  position: absolute;
+  left: calc(100% + 4.8px);
+
+  height: 1px;
+  width: 36px;
+
+  background-color: #999999;
+}
+
+.size-section .indicator-wrap {
+  display: flex;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  font-size: 14px;
+  line-height: 1.2;
+
+  letter-spacing: 0.10998px;
+
   color: var(--main-color);
   background-color: #00b68c;
 }
@@ -636,7 +675,7 @@ img {
   margin-bottom: 0;
 }
 
-.controller-link {
+.size-section .controller-link {
   padding: 15px 23px 14px 23px;
 
   border: 2px solid rgba(64, 64, 64, 0.3);
@@ -647,3 +686,71 @@ img {
   display: block;
   background-color: var(--second-color-btn);
 }
+
+/* Experience */
+
+.experience-section {
+  padding-top: 117px;
+  padding-bottom: 117px;
+  padding-right: 100px;
+}
+
+.experience-title {
+  margin-bottom: 123px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: var(--main-color-text);
+}
+.experience-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+.experiense-list {
+  margin-bottom: 36px;
+  display: flex;
+  gap: 30px;
+}
+
+.experience-section .secondary {
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 40px;
+
+  color: var(--second-color-btn);
+}
+
+.experience-section .secondary:after {
+  background-color: currentColor;
+}
+
+.experience-text {
+  margin-bottom: 28px;
+  font-size: 36px;
+  line-height: 1.45;
+  text-indent: -12px;
+
+  color: var(--main-color-text);
+}
+
+.experience-text-wrap {
+  margin-bottom: 27px;
+}
+
+.experience-after-text {
+  margin-bottom: 14px;
+  line-height: 1.4;
+
+  color: #646565;
+}
+
+.experience-sub-text {
+  line-height: 1.4;
+
+  color: #646565;
+}
+
+/* Services */
